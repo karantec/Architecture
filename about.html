@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="catering services Bokaro, best catering in Bokaro, wedding catering Bokaro, event catering Bokaro, Sanjay Catering Bokaro, Bokaro food catering, corporate catering Bokaro, birthday party catering Bokaro, Bokaro caterers, Bokaro catering services" name="keywords" />
     <meta content="Sanjay Catering provides the best catering services in Bokaro for weddings, corporate events, birthday parties, and more. Known for delicious food and professional service, we ensure your event is a success." name="description" />
-
+    
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,108 @@
       rel="stylesheet"
     />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        .feature-card {
+            transition: all 0.4s ease;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: all 0.6s ease;
+        }
+        
+        .feature-card:hover::before {
+            top: 100%;
+            left: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            background: linear-gradient(145deg, #ffffff, #f5f5f5);
+        }
+
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.4s ease;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature-card:hover .icon-wrapper {
+            transform: rotate(360deg) scale(1.1);
+            background: linear-gradient(145deg, #007bff, #0056b3);
+        }
+
+        .feature-card:hover .icon-wrapper svg {
+            stroke: white;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #007bff, #00bcd4);
+            transition: width 0.6s ease;
+        }
+
+        .section-title.animate-active::after {
+            width: 100%;
+        }
+
+        .counter {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
     <!-- Icon Font Stylesheet -->
     <link
       rel="stylesheet"
@@ -48,8 +150,8 @@
         <nav class="navbar navbar-light navbar-expand-lg py-4">
           <a href="index.html" class="navbar-brand">
             <h1 class="text-primary fw-bold mb-0">
-              Sanjay caterers<span class="text-dark"></br>
-                 & Event Planners</span>
+              OSA BIM   <span class="text-dark"></br>
+                 & Design Consultants</span>
             </h1>
           </a>
           <button
@@ -65,29 +167,18 @@
               <a href="index.html" class="nav-item nav-link active">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
-              <a href="event.html" class="nav-item nav-link">Events</a>
-              <a href="video.html" class="nav-item nav-link">Videos</a>
-              <a href="menu.html" class="nav-item nav-link">Menu</a>
+             
               <a href="contact.html" class="nav-item nav-link">Contact</a>
               </div>
              
             </div>
-            <button
-              class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-            <a
-              href=""
-              class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"
-              >Book Now</a
-            >
+           
+            
           </div>
         </nav>
       </div>
     </div>
+    <!-- Navbar End -->
     <style>
       /* Style for the WhatsApp icon container */
       .whatsapp-icon {
@@ -123,11 +214,9 @@
   </div>
   <script>
     function openWhatsApp() {
-        window.open("https://wa.me/7322031398", "_blank");
+        window.open("https://wa.me/8624053270", "_blank");
     }
 </script>
-    <!-- Navbar End -->
-
     <!-- Modal Search Start -->
     <div
       class="modal fade"
@@ -170,7 +259,7 @@
     <div
       class="container-fluid bg-light py-6 my-6 mt-0"
       style="
-        background-image: url('https://cdn0.weddingwire.in/vendor/3754/3_2/960/jpg/13669187-1214103588608974-7069166054105052142-n_15_53754.jpeg');
+        background-image: url('https://blog.novatr.com/hs-fs/hubfs/Using%20BIM%20for%20building%20design.jpg?width=771&height=433&name=Using%20BIM%20for%20building%20design.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -196,7 +285,7 @@
       <div class="container">
         <div class="row g-5 align-items-center">
           <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-            <img src="img/about.jpg" class="img-fluid rounded" alt="" />
+            <img src="https://static.wixstatic.com/media/cce81a_07942b4bdce940368824207ed791a81b~mv2.jpg/v1/fill/w_800,h_571,fp_0.50_0.50,q_85,enc_avif,quality_auto/cce81a_07942b4bdce940368824207ed791a81b~mv2.jpg" class="img-fluid rounded" alt="" />
           </div>
           <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
             <small
@@ -205,30 +294,15 @@
             >
             <h1 class="display-5 mb-4">Trusted By 200 + satisfied clients</h1>
             <p class="mb-4 text-dark">
-              At Sanjay Catering,From Since  1996, we understand that food is the heart of
-               every gathering—whether it's a personal celebration, a corporate event, or a casual picnic. Our dedicated team is committed to providing exceptional catering services tailored to meet your specific needs and preferences. From intimate gatherings to grand celebrations, we offer a wide range of catering options that cater to all occasions. Our services include elegant affairs, where we make weddings, anniversaries, and formal events unforgettable with our exquisite menu options and elegant presentations. We specialize in creating memorable dining experiences that your guests will rave about.
+              <span class="font-weight-bold">At OSA BIM and Design Consultants,</span> we are redefining Building Information Modeling (BIM) through the power of Artificial Intelligence (AI). Our goal is to revolutionize the AEC industry by integrating AI-driven automation, predictive analytics, and intelligent coordination into the BIM process.
+
+
             </p>
             <p class="mb-4 text-dark">
-              Choosing Sanjay Catering means opting for diverse menu options, from traditional favorites to contemporary cuisine, all designed to suit various tastes and dietary preferences. We believe that every event is unique, so we offer personalized catering solutions, working closely with you to create a menu that aligns perfectly with your vision and budget. We are committed to using only the freshest, highest-quality ingredients, ensuring that every dish is prepared with care. Our experienced staff provides top-notch service from setup to cleanup, allowing you to focus on enjoying your event with your guests.
+              With over a decade of experience, we have successfully executed projects across the Middle East and the U.S., providing cutting-edge solutions for BIM model creation, coordination, documentation, and management. Our expertise ensures seamless project execution, reducing errors, improving efficiency, and delivering high-quality digital workflows.
+
             </p>
-            <div class="row g-4 text-dark mb-5">
-              <div class="col-sm-6">
-                <i class="fas fa-share text-primary me-2"></i>Fresh and Fast
-                food Delivery
-              </div>
-              <div class="col-sm-6">
-                <i class="fas fa-share text-primary me-2"></i>24/7 Customer
-                Support
-              </div>
-              <div class="col-sm-6">
-                <i class="fas fa-share text-primary me-2"></i>Easy Customization
-                Options
-              </div>
-              <div class="col-sm-6">
-                <i class="fas fa-share text-primary me-2"></i>Delicious Deals
-                for Delicious Meals
-              </div>
-            </div>
+            
             <a href="" class="btn btn-primary py-3 px-5 rounded-pill"
               >About Us<i class="fas fa-arrow-right ps-2"></i
             ></a>
@@ -238,89 +312,103 @@
     </div>
     <!-- About End -->
 
-    <!-- Fact Start-->
-    <div class="container-fluid faqt py-6">
+    <section class="py-5 bg-light">
       <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-7">
-            <div class="row g-4">
-              <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
-                <div class="faqt-item bg-primary rounded p-4 text-center">
-                  <i class="fas fa-users fa-4x mb-4 text-white"></i>
-                  <h1 class="display-4 fw-bold" data-toggle="counter-up">
-                    689
-                  </h1>
-                  <p class="text-dark text-uppercase fw-bold mb-0">
-                    Happy Customers
-                  </p>
-                </div>
+          <div class="row justify-content-center mb-5">
+              <div class="col-lg-8 text-center">
+                  <h2 class="fw-bold mb-4 section-title animate-on-scroll">Why Choose OSA BIM?</h2>
+                  <p class="lead text-muted animate-on-scroll">Delivering excellence through innovation and expertise</p>
               </div>
+          </div>
+  
+          <div class="row g-4">
+              <!-- Experience Card -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="card feature-card border-0 shadow-sm p-4 animate-on-scroll">
+                      <div class="icon-wrapper floating">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                          </svg>
+                      </div>
+                      <div class="counter" data-target="10">0</div>
+                      <h4 class="mb-3">Proven Expertise</h4>
+                      <p class="text-muted">10+ years of BIM expertise, now enhanced with cutting-edge AI-powered solutions for optimal project delivery.</p>
+                  </div>
+              </div>
+  
+              <!-- Global Projects Card -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="card feature-card border-0 shadow-sm p-4 animate-on-scroll" style="animation-delay: 0.2s;">
+                      <div class="icon-wrapper floating">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <line x1="2" y1="12" x2="22" y2="12"></line>
+                              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                          </svg>
+                      </div>
+                      <div class="counter" data-target="100">0</div>
+                      <h4 class="mb-3">Global Reach</h4>
+                      <p class="text-muted">Extensive experience in Middle East and US-based projects, delivering excellence across borders.</p>
+                  </div>
+              </div>
+  
+              <!-- Integration Card -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="card feature-card border-0 shadow-sm p-4 animate-on-scroll" style="animation-delay: 0.4s;">
+                      <div class="icon-wrapper floating">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                              <polyline points="2 17 12 22 22 17"></polyline>
+                              <polyline points="2 12 12 17 22 12"></polyline>
+                          </svg>
+                      </div>
+                      <div class="counter" data-target="95">0</div>
+                      <h4 class="mb-3">Smart Integration</h4>
+                      <p class="text-muted">Seamless integration of AI & BIM workflows ensuring optimized project execution and delivery.</p>
+                  </div>
+              </div>
+  
+              <!-- Accuracy Card -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="card feature-card border-0 shadow-sm p-4 animate-on-scroll">
+                      <div class="icon-wrapper floating">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                          </svg>
+                      </div>
+                      <div class="counter" data-target="99">0</div>
+                      <h4 class="mb-3">High Precision</h4>
+                      <p class="text-muted">Achieve high accuracy with reduced rework and faster project turnaround times.</p>
+                  </div>
+              </div>
+  
+              <!-- Industry Solutions Card -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="card feature-card border-0 shadow-sm p-4 animate-on-scroll">
+                      <div class="icon-wrapper floating">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          </svg>
+                      </div>
+                      <div class="counter" data-target="500">0</div>
+                      <h4 class="mb-3">Tailored Solutions</h4>
+                      <p class="text-muted">Industry-compliant solutions customized for AEC professionals, contractors, and developers.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-              <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
-                <div class="faqt-item bg-primary rounded p-4 text-center">
-                  <i class="fas fa-check fa-4x mb-4 text-white"></i>
-                  <h1 class="display-4 fw-bold" data-toggle="counter-up">
-                    253
-                  </h1>
-                  <p class="text-dark text-uppercase fw-bold mb-0">
-                    Events Complete
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-            <div class="video">
-              <button
-                type="button"
-                class="btn btn-play"
-                data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                data-bs-target="#videoModal"
-              >
-                <span></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <!-- Fact Start-->
+    
     <!-- Modal Video -->
-    <div
-      class="modal fade"
-      id="videoModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- 16:9 aspect ratio -->
-            <div class="ratio ratio-16x9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowfullscreen
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fact End -->
+    
 
     <!-- Team Start -->
     <div class="container-fluid event py-6">
@@ -331,7 +419,7 @@
             >Latest Events</small
           >
           <h1 class="display-5 mb-5">
-            Our Social & Professional Events Gallery
+            Our Professional Gallery
           </h1>
         </div>
         <div class="tab-class text-center">
@@ -345,7 +433,7 @@
                 data-bs-toggle="pill"
                 href="#tab-1"
               >
-                <span class="text-dark" style="width: 150px">All Events</span>
+                <span class="text-dark" style="width: 150px">All Service</span>
               </a>
             </li>
             <li class="nav-item p-2">
@@ -354,7 +442,8 @@
                 data-bs-toggle="pill"
                 href="#tab-2"
               >
-                <span class="text-dark" style="width: 150px">Wedding</span>
+                <span class="text-dark" style="width: 400px">AI-Driven BIM Modeling & Documentation
+                </span>
               </a>
             </li>
             <li class="nav-item p-2">
@@ -363,7 +452,8 @@
                 data-bs-toggle="pill"
                 href="#tab-3"
               >
-                <span class="text-dark" style="width: 150px">Corporate</span>
+                <span class="text-dark" style="width: 400px">AI-Powered BIM Coordination & Clash Detection
+                </span>
               </a>
             </li>
             <li class="nav-item p-2">
@@ -372,7 +462,7 @@
                 data-bs-toggle="pill"
                 href="#tab-4"
               >
-                <span class="text-dark" style="width: 150px">Cocktail</span>
+                <span class="text-dark" style="width: 400px">AI-Integrated BIM Management & BEP Development</span>
               </a>
             </li>
             <li class="nav-item p-2">
@@ -381,7 +471,8 @@
                 data-bs-toggle="pill"
                 href="#tab-5"
               >
-                <span class="text-dark" style="width: 150px">Buffet</span>
+                <span class="text-dark" style="width: 400px">AI-Enhanced Digital Twin & Facility Management
+                </span>
               </a>
             </li>
           </ul>
@@ -396,14 +487,16 @@
                     >
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-1.jpg"
+                          class="img-fluid rounded "
+                          src="https://media.licdn.com/dms/image/v2/D5612AQFVA7PvRQdDLA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1695362143111?e=2147483647&v=beta&t=ZlI-KXG4hWqoJgNnDaI4D2duvd_ryagPcwQ5mDI3Imc"
+                         width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Wedding</h4>
+                         
                           <a
-                            href="img/event-1.jpg"
+                            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL45DU5_GUzakd7Lf9hXvwE3UadUyr3-HCRQ&s"
                             data-lightbox="event-1"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -417,14 +510,16 @@
                     >
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-2.jpg"
+                          class= "img-fluid rounded "
+                          width="500px" 
+                          height="500px"
+                          src="https://media.licdn.com/dms/image/v2/D5612AQGnnxwrZP3kHw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1687170122194?e=2147483647&v=beta&t=DQNddlIkBCV4uidU8MIFWbvGTR2k1g8s_ATiIkX2Hqs"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Corporate</h4>
+                          
                           <a
-                            href="img/event-2.jpg"
+                            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjRZ6NaQoYwcMHI2SSb2gjfqMuEjMK4dUkOA&s"
                             data-lightbox="event-2"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -438,15 +533,17 @@
                     >
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-3.jpg"
+                          class="img-fluid rounded "
+                          src="https://www.united-bim.com/wp-content/uploads/2019/04/Step-2-Clash-Detection-Report-Generation-Process-1.jpg"
+                        width="500px" 
+                          height="500px"
                           alt=""
                         />
 
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Wedding</h4>
+                          <h4 class="me-auto"></h4>
                           <a
-                            href="img/event-3.jpg"
+                            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpG8uYvIE_xXzxP7c-f34-xVNdfo_6F0OFaQ&s"
                             data-lightbox="event-3"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -460,14 +557,16 @@
                     >
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-4.jpg"
+                          class="img-fluid rounded "
+                          src="https://cdn.prod.website-files.com/6091406ee82ddd1ac18bf48e/66bc94cfedafe160daa99187_66bc94a28d5a49c450a3491e_Soft%2520clash.png"
+                         width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Buffet</h4>
+                         
                           <a
-                            href="img/event-4.jpg"
+                            href="https://cdn.prod.website-files.com/6091406ee82ddd1ac18bf48e/66bc94cfedafe160daa99187_66bc94a28d5a49c450a3491e_Soft%2520clash.png"
                             data-lightbox="event-4"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -482,13 +581,15 @@
                       <div class="event-img position-relative">
                         <img
                           class="img-fluid rounded w-100"
-                          src="img/event-5.jpg"
+                          src="https://cdn.prod.website-files.com/6091406ee82ddd1ac18bf48e/66bc94cfedafe160daa99187_66bc94a28d5a49c450a3491e_Soft%2520clash.png"
+                          width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Cocktail</h4>
+                         
                           <a
-                            href="img/event-5.jpg"
+                            href="https://www.united-bim.com/wp-content/uploads/2019/04/Coordinated-models-with-Design-Clashes.jpg"
                             data-lightbox="event-5"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -503,13 +604,15 @@
                       <div class="event-img position-relative">
                         <img
                           class="img-fluid rounded w-100"
-                          src="img/event-6.jpg"
+                          width="500px" 
+                          height="500px"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4BXL_5XLMCz6KYc9R6_i3YWukppc7anxDw&s"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Wedding</h4>
+                          
                           <a
-                            href="img/event-6.jpg"
+                            href="https://www.pentagonsolutions.com/wp-content/uploads/2024/01/digital-twin1-1024x531.png.webp"
                             data-lightbox="event-6"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -524,13 +627,15 @@
                       <div class="event-img position-relative">
                         <img
                           class="img-fluid rounded w-100"
-                          src="img/event-7.jpg"
+                         width="500px" 
+                          height="500px"
+                          src="https://lh7-us.googleusercontent.com/pGlRlRgyb6V4R5jDOCH00oIAA5zC2NT_3S9RP6NdzFxnu0yCbb0DDTDESlXpuF2hvCCS50wrdZw3hIa6kFTcjlQSEIK29pgQfr5SeyfWJADwwJkQhisJb_iYCQh7aieUL7Uftzi4jS1F4pYH1FwDexw"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Buffet</h4>
+                         
                           <a
-                            href="img/event-7.jpg"
+                            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZEoBa-ruzaIXBO-oBjHd_zgyMLZOl_yLmw&s"
                             data-lightbox="event-7"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -545,13 +650,15 @@
                       <div class="event-img position-relative">
                         <img
                           class="img-fluid rounded w-100"
-                          src="img/event-8.jpg"
+                        width="500px" 
+                          height="500px"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5_bKAnp5Tx_V1g-uFQ9QnhIlNlD6eCd_LEg&s"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Corporate</h4>
+                         
                           <a
-                            href="img/event-8.jpg"
+                            href="#"
                             data-lightbox="event-17"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -571,13 +678,13 @@
                       <div class="event-img position-relative">
                         <img
                           class="img-fluid rounded w-100"
-                          src="img/event-1.jpg"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfQhhGplALE6YIkpq_CdTY7y_ayOt2AZ_aQ&s"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Wedding</h4>
+                          
                           <a
-                            href="img/01.jpg"
+                            href="#"
                             data-lightbox="event-8"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -587,15 +694,12 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
-                        <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-2.jpg"
-                          alt=""
-                        />
+                        
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Wedding</h4>
+                         
                           <a
-                            href="img/01.jpg"
+                            href="#"
+
                             data-lightbox="event-9"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -614,14 +718,16 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-3.jpg"
+                          class="img-fluid rounded "
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHBX_kJWFDGiOAqvqyeo1H3plfcowNcehQF51HxClNQhwQfcnXWVGaxQGHUufXb22w8k&usqp=CAU"
+                          width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Corporate</h4>
+                         
                           <a
-                            href="img/01.jpg"
+                            href="#"
                             data-lightbox="event-10"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -632,14 +738,16 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-4.jpg"
+                          class="img-fluid rounded"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPPqAB0p_FOpiEVMEH04XlGEWWZuiWI39_A&s"
+                          width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Corporate</h4>
+                         
                           <a
-                            href="img/01.jpg"
+                            href="#"
                             data-lightbox="event-11"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -658,14 +766,16 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-5.jpg"
+                          class="img-fluid rounded "
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIhTmi28m1zGEDqrrWKbJK3ZDsEPFFlH4ZuTYNnbNc5zwOi1Ej1nOmU4PvyNn96pzuRNg&usqp=CAU"
+                          width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Cocktail</h4>
+                         
                           <a
-                            href="img/01.jpg"
+                            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vB9uC3oJEqq56aP4xcxCLBQ59qkqLYNFqg&s"
                             data-lightbox="event-12"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -676,14 +786,16 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-6.jpg"
+                          class="img-fluid rounded"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vB9uC3oJEqq56aP4xcxCLBQ59qkqLYNFqg&s"
+                          width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Cocktail</h4>
+                          
                           <a
-                            href="img/01.jpg"
+                            href="#"
                             data-lightbox="event-13"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -702,14 +814,16 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-7.jpg"
+                          class="img-fluid rounded "
+                          src="https://scg-de.s3.amazonaws.com/images/article/DE2412_FF_DigitalTwinTrend_hexagon_digital_twin_industrial_low_shot_V2_600.jpg"
+                         width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Buffet</h4>
+                          
                           <a
-                            href="img/01.jpg"
+                            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCraIrwSO62RJVfXaka-wNAvdl0g12a_j1WA&s"
                             data-lightbox="event-14"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -720,14 +834,16 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="event-img position-relative">
                         <img
-                          class="img-fluid rounded w-100"
-                          src="img/event-8.jpg"
+                          class="img-fluid rounded "
+                          src="https://pinnacleinfotech.com/wp-content/uploads/2022/09/facility-management_technical-sample-6.jpg"
+                          width="500px" 
+                          height="500px"
                           alt=""
                         />
                         <div class="event-overlay d-flex flex-column p-4">
-                          <h4 class="me-auto">Buffet</h4>
+                         
                           <a
-                            href="img/01.jpg"
+                            href="#"
                             data-lightbox="event-15"
                             class="my-auto"
                             ><i class="fas fa-search-plus text-dark fa-2x"></i
@@ -747,208 +863,222 @@
 
     <!-- Footer Start -->
     <div
-      class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h1 class="text-primary">
-                Sanjay<span class="text-dark">Catering & Event Planners</span>
-                BY  <span class="text-dark">Asvind Kumar</span>
-              </h1>
-              <p class="lh-lg mb-4 text-dark">
-                A Complete Catering Solution for your all kinds of
-                Family,Corporate and Social Event to make them simple best
-              </p>
-              <div class="footer-icon d-flex">
-                <a
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  href="https://x.com/sanjaycaterers1?t=V9NbAWN-5garUXHjhUhF0A&s=09"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/sanjay_caterer_foodking?utm_source=qr&igsh=anlyaXA4djVzc24y"
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
+    class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
+    data-wow-delay="0.1s"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h1 class="text-primary">
+              OSA BIM<span class="text-dark"> and Design Consultants</span>
+           
+            </h1>
+            <p class="lh-lg mb-4 text-dark">
+              At OSA BIM and Design Consultants, we are redefining Building Information Modeling (BIM) through the power of Artificial Intelligence (AI). 
+            </p>
+            
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">EVENT PLANNER</h4>
-              <div class="d-flex flex-column align-items-start">
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Amenities
-                  </a
-                >
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Seating Arrangements
-                  </a
-                >
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Catering and Food Services
-                  </a
-                >
-                <a class="text-dark mb-3" href=""
-                  ><i class="fa fa-check text-primary me-2"></i> Lighting
-
-                 </a
-                >
-                <a class="text-dark mb-3" href=""
-                  ><i class="fa fa-check text-primary me-2"></i> Sound Systems
-
-
-                  </a
-                >
-                <a class="text-dark mb-3" href=""
-                ><i class="fa fa-check text-primary me-2"></i> Health and Safety
-
-
-
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">SERVICES</h4>
+            <div class="d-flex flex-column align-items-start">
+              <a class="text-dark mb-3 text-dark" href=""
+                ></i>AI-Driven BIM Modeling & Documentation
                 </a
               >
-              </div>
+              <a class="text-dark mb-3 text-dark" href=""
+                ></i>AI-Powered BIM Coordination & Clash Detection
+                </a
+              >
+              <a class="text-dark mb-3 text-dark" href=""
+                >AI-Integrated BIM Management & BEP Development
+                </a
+              >
+              <a class="text-dark mb-3" href=""
+                ></i> AI-Enhanced Digital Twin & Facility Management
+
+
+               </a
+              >
+              
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Contact Us</h4>
-              <div class="d-flex flex-column align-items-start">
-                <p class="text-dark">
-                  <i class="fa fa-map-marker-alt me-2"></i>
-                  C/F Harshvardhan Plaza City Centre, Sector 4, Bokaro Steel
-                  City Jharkhand
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-phone-alt text-primary me-2"></i> Primary : +91
-                   8863804782,9939341022
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-whatsapp text-primary me-2" ></i> WhatsApp: +91 9065683771
-                </p>
-                <p class="text-dark">
-                  <i class="fas fa-envelope text-primary me-2"></i>
-                  SanjayCatering@gmail.com
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
-                  Service
-                </p>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Contact Us</h4>
+            <div class="d-flex flex-column align-items-start">
+              <p class="text-dark">
+                <i class="fa fa-map-marker-alt me-2"></i>
+                Pentagon, Magarpatta City, Pune, India
+
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-phone-alt text-primary me-2"></i> Primary : +91
+                  +91 8624053270 
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-whatsapp text-primary me-2" ></i> WhatsApp: +91 8624053270 
+              </p>
+              <p class="text-dark">
+                <i class="fas fa-envelope text-primary me-2"></i>
+                aadarshghorpade3@gmail.com
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
+                Service
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Social Gallery</h4>
-              <div class="row g-2">
-                <div class="col-4">
-                  <a href="https://www.instagram.com/sanjay_caterer_foodking?utm_source=qr&igsh=anlyaXA4djVzc24y">
-                    <img
-                      src="img/menu-01.jpg"
-                      class="img-fluid rounded-circle border border-primary p-2"
-                      alt=""
-                    />
-                  </a>
-                  
-                </div>
-                <div class="col-4">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Social Gallery</h4>
+            <div class="row g-2">
+              <div class="col-4">
+                <a href="#">
                   <img
-                    src="img/menu-02.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLawAc0zpnrBPmnbnbaiIX2FtQ6d_nk8cvg&s"
                     class="img-fluid rounded-circle border border-primary p-2"
                     alt=""
                   />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-03.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-04.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-05.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-06.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
+                </a>
+                
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://steelaris.com/wp-content/uploads/2024/09/Depositphotos_474569128_L.jpg"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://engisoftengineering.com/wp-content/uploads/2023/12/Why-Partner-With-Us.webp"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe0XZSKas6ikMxrvBN_nvSS9Vh7uj_v9nnMg&s"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://bimassociates.com/wp-content/uploads/2024/10/home-page-c.jpg"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8KqgUqmuipt0phfe_zl_TkPOaKyIFw9ay5w&s"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span class="text-light"
-              ><a href="#"
-                ><i class="fas fa-copyright text-light me-2"></i>Sanjay
-                Catering</a
-              >, All right reserved.</span
-            >
-          </div>
-          <div class="col-md-6 my-auto text-center text-md-end text-white">
-            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-            Designed By
-            <a
-              class="border-bottom"
-              href="https://sinu-new-portfolio.vercel.app/"
-              >Coding Ditto</a
-            >
-          </div>
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="text-light"
+            ><a href="#"
+              ><i class="fas fa-copyright text-light me-2"></i>OSA BIM and Design Consultants 
+              </a
+            >, All right reserved.</span
+          >
+        </div>
+        <div class="col-md-6 my-auto text-center text-md-end text-white">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Developed By
+          <a
+            class="border-bottom"
+            href="https://sinu-new-portfolio.vercel.app/"
+            >Coding Ditto</a
+          >
         </div>
       </div>
     </div>
-    <!-- Copyright End -->
+  </div>
+  <!-- Copyright End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
+    ><i class="fa fa-arrow-up"></i
+  ></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+          threshold: 0.2
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('animate-active');
+              }
+          });
+      }, observerOptions);
+  
+      document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+          observer.observe(element);
+      });
+  
+      // Counter animation
+      const counters = document.querySelectorAll('.counter');
+      
+      counters.forEach(counter => {
+          const updateCount = () => {
+              const target = parseInt(counter.getAttribute('data-target'));
+              const count = parseInt(counter.innerText);
+              const increment = target / 100;
+  
+              if (count < target) {
+                  counter.innerText = Math.ceil(count + increment);
+                  setTimeout(updateCount, 20);
+              } else {
+                  counter.innerText = target + '+';
+              }
+          };
+  
+          // Start counter animation when element is in view
+          const counterObserver = new IntersectionObserver((entries) => {
+              if (entries[0].isIntersecting) {
+                  updateCount();
+              }
+          });
+  
+          counterObserver.observe(counter);
+      });
+  </script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
 </html>

@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="catering services Bokaro, best catering in Bokaro, wedding catering Bokaro, event catering Bokaro, Sanjay Catering Bokaro, Bokaro food catering, corporate catering Bokaro, birthday party catering Bokaro, Bokaro caterers, Bokaro catering services" name="keywords" />
     <meta content="Sanjay Catering provides the best catering services in Bokaro for weddings, corporate events, birthday parties, and more. Known for delicious food and professional service, we ensure your event is a success." name="description" />
-
+    
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,8 +48,8 @@
         <nav class="navbar navbar-light navbar-expand-lg py-4">
           <a href="index.html" class="navbar-brand">
             <h1 class="text-primary fw-bold mb-0">
-              Sanjay caterers<span class="text-dark"></br>
-                 & Event Planners</span>
+              OSA BIM   <span class="text-dark"></br>
+                 & Design Consultants</span>
             </h1>
           </a>
           <button
@@ -65,25 +65,13 @@
               <a href="index.html" class="nav-item nav-link active">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
-              <a href="event.html" class="nav-item nav-link">Events</a>
-              <a href="video.html" class="nav-item nav-link">Videos</a>
-              <a href="menu.html" class="nav-item nav-link">Menu</a>
+             
               <a href="contact.html" class="nav-item nav-link">Contact</a>
               </div>
              
             </div>
-            <button
-              class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-            <a
-              href=""
-              class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"
-              >Book Now</a
-            >
+           
+            
           </div>
         </nav>
       </div>
@@ -124,7 +112,7 @@
   </div>
   <script>
     function openWhatsApp() {
-        window.open("https://wa.me/7322031398", "_blank");
+        window.open("https://wa.me/8624053270", "_blank");
     }
 </script>
     <!-- Modal Search Start -->
@@ -170,7 +158,7 @@
     <div
       class="container-fluid bg-light py-6 my-6 mt-0"
       style="
-        background-image: url('https://cdn0.weddingwire.in/vendor/3754/3_2/960/jpg/13669187-1214103588608974-7069166054105052142-n_15_53754.jpeg');
+        background-image: url('https://media.licdn.com/dms/image/v2/D4D12AQFmX9FsULXGpw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1732356423863?e=2147483647&v=beta&t=MDlbly5Ik-QvP5lHZ4IaOKsB5_skEPofDsL3yHd-CmA');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -180,779 +168,583 @@
       "
     >
       <div class="container text-center animated bounceInDown">
-        <h1 class="display-1 mb-4 text-white">Services</h1>
+        <h1 class="display-1 mb-4">Services</h1>
         <ol
           class="breadcrumb justify-content-center mb-0 animated bounceInDown"
         >
-          <li class="breadcrumb-item text-white font-bold">
-            <a href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item text-white font-bold" aria-current="page">
-            Services
-          </li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item text-dark" aria-current="page">Services</li>
         </ol>
       </div>
     </div>
 
     <!-- Hero End -->
-
-    <!-- Service Start -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-      .service-content-icon h4,
-      .service-content-icon p {
-        color: #343a40; /* Dark text color */
-      }
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #3b82f6;
+            --accent-color: #60a5fa;
+        }
 
-      .service-content-icon h4:hover,
-      .service-content-icon p:hover {
-        color: #007bff; /* Change to desired color on hover */
-      }
+        .services-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 80px 0;
+            overflow: hidden;
+        }
 
-      .service-content-icon a {
-        color: #007bff; /* Button text color */
-      }
+        .section-title {
+            position: relative;
+            margin-bottom: 60px;
+        }
 
-      .service-content-icon a:hover {
-        color: #0056b3; /* Button text color on hover */
-      }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+            transform: rotate(0deg);
+        }
+
+        .service-card:hover .service-icon {
+            transform: rotate(360deg);
+        }
+
+        .service-icon i {
+            font-size: 30px;
+            color: white;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        .feature-item {
+            padding: 10px 0;
+            position: relative;
+            padding-left: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .feature-item::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .feature-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:hover .feature-item::before {
+            transform: translateX(5px);
+        }
+
+        .feature-item:nth-child(1) { transition-delay: 0.1s; }
+        .feature-item:nth-child(2) { transition-delay: 0.2s; }
+        .feature-item:nth-child(3) { transition-delay: 0.3s; }
+        .feature-item:nth-child(4) { transition-delay: 0.4s; }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-image {
+            border-radius: 20px;
+            overflow: hidden;
+            height: 100%;
+            position: relative;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .service-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+            pointer-events: none;
+        }
+
+        @media (max-width: 991px) {
+            .service-image {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+        }
     </style>
 
-    <div class="container-fluid service py-6">
+    <!-- Service Start -->
+    <section class="services-section">
       <div class="container">
-        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-          <small
-            class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
-            >Our Services</small
-          >
-          <h1 class="display-5 mb-5">What We Offer</h1>
+          <div class="text-center mb-5">
+              <h2 class="section-title animate-on-scroll">AI-Powered BIM Solutions</h2>
+              <p class="lead text-muted animate-on-scroll text-dark text-black">3D BIM MODEL DEVELOPMENT | DESIGN REVIEW ANALYSIS AND TECHNICAL DESIGN CONTROL | CLASH DETECTION ANALYSIS | DETAILED MODEL-BASED QUANTITY TAKEOFF ANALYSIS AND BILL OF QUANTITIES | INTEGRATED BIM DESIGN | DESIGN MANAGEMENT</p>
+          </div>
+  
+          <!-- AI-Driven BIM Modeling -->
+          <div class="row align-items-center mb-5 animate-on-scroll">
+              <div class="col-lg-6">
+                  <div class="service-card">
+                      <div class="service-icon">
+                          <i class="fas fa-cube"></i>
+                      </div>
+                      <h3 class="h4 mb-4">AI-Driven BIM Modeling & Documentation</h3>
+                      <ul class="feature-list">
+                          <li class="feature-item">Automated BIM model creation at LOD 100-500 using AI-assisted algorithms</li>
+                          <li class="feature-item">AI-based data extraction and conversion from 2D drawings to intelligent 3D models</li>
+                          <li class="feature-item">Smart parametric modeling that adapts dynamically to design changes</li>
+                          <li class="feature-item">AI-assisted as-built documentation with real-time updates</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="service-image">
+                      <img src="https://d122f4822rob2u.cloudfront.net/blog/04_03_24_4.PNG" alt="AI-Driven BIM Modeling">
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row align-items-center mb-5 animate-on-scroll">
+            <div class="col-lg-6 order-lg-2">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="h4 mb-4">
+                      DESIGN MANAGEMENT</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">Defining design processes, responsabilities and deliverables</li>
+                        <li class="feature-item">Defining schedule of drawings and all necessery documents for each discipline</li>
+                        <li class="feature-item">Monithoring and design reporting</li>
+                        <li class="feature-item">Change management procedures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-image">
+                  <img src="https://static.wixstatic.com/media/cce81a_9c49f0f0f489441e97342eb34c50f67b~mv2.jpg/v1/fill/w_460,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/10-Steps-to-Designing-a-Building-Development-Plan.jpg" 
+                  class="img-fluid" 
+                  style="width: 700px; height: 300px; object-fit: cover;"
+                  alt="AI-Driven BIM Modeling">
+                
+                  </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div
-            class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="bg-light rounded service-item">
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-icon text-center">
-                  <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
-                  <h4 class="mb-3 text-dark">Wedding Services</h4>
-                  <p class="mb-4 text-dark">
-                    Our Wedding Services include customized menu options,
-                    elegant presentation, and exceptional service to make your
-                    special day memorable.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-dark text-white px-4 py-2 rounded-pill"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="bg-light rounded service-item">
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-icon text-center">
-                  <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
-                  <h4 class="mb-3 text-dark">Corporate Catering</h4>
-                  <p class="mb-4 text-dark">
-                    Elevate your corporate events with our diverse catering
-                    options, tailored to impress your clients and colleagues
-                    with high-quality, delicious meals.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-dark text-white px-4 py-2 rounded-pill"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        
-          <div
-            class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="bg-light rounded service-item">
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-icon text-center">
-                  <i class="fas fa-wine-glass-alt fa-7x text-primary mb-4"></i>
-                  <h4 class="mb-3 text-dark">Pub Party</h4>
-                  <p class="mb-4 text-dark">
-                    Our Pub Party catering brings a vibrant atmosphere with a
-                    selection of drinks, snacks, and lively service to ensure a
-                    fun and engaging event.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-dark text-white px-4 py-2 rounded-pill"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          
-         
-          <div
-            class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp"
-            data-wow-delay="0.7s"
-          >
-            <div class="bg-light rounded service-item">
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-icon text-center">
-                  <i class="fas fa-utensils fa-7x text-primary mb-4"></i>
-                  <h4 class="mb-3 text-dark">Buffet Catering</h4>
-                  <p class="mb-4 text-dark">
-                    Our Buffet Catering service offers a wide range of dishes
-                    for guests to choose from, creating a relaxed and
-                    interactive dining experience.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-dark text-white px-4 py-2 rounded-pill"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-6">
-      <div class="container">
-        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-          <small
-            class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
-            >Testimonial</small
-          >
-          <h1 class="display-5 mb-5 text-dark">What Our Customers Say!</h1>
+
+
+
+
+          <!-- AI-Powered Coordination -->
+          <div class="row align-items-center mb-5 animate-on-scroll">
+              <div class="col-lg-6 ">
+                  <div class="service-card">
+                      <div class="service-icon">
+                          <i class="fas fa-vector-square"></i>
+                      </div>
+                      <h3 class="h4 mb-4">AI-Powered BIM Coordination & Clash Detection</h3>
+                      <ul class="feature-list">
+                          <li class="feature-item">Machine learning-based clash detection and resolution strategies</li>
+                          <li class="feature-item">Predictive AI models to prevent design conflicts before they arise</li>
+                          <li class="feature-item">Automated coordination workflows that enhance efficiency</li>
+                          <li class="feature-item">AI-enhanced visualization tools for better project understanding</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                  <div class="service-image">
+                      <img src="https://d122f4822rob2u.cloudfront.net/blog/04_03_24_3.PNG" alt="BIM Coordination">
+                  </div>
+              </div>
+          </div>
+
+
+
+          <div class="row align-items-center mb-5 animate-on-scroll">
+            <div class="col-lg-6 order-lg-2">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="h4 mb-4">
+                      DETAILED MODEL-BASED QUANTITY TAKEOFF ANALYSIS AND BILL OF QUANTITIES</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">Smart Quantity takeoff (QTO) creation – automatically define rules for classification and quantification</li>
+                        <li class="feature-item">Generation of QTOs and Bill of quantities (BOQs) based on the BIM model</li>
+                        <li class="feature-item">Regular BIM model updates, analysis and reports (QTO visual reports, QTO based cost classification, Smart scheduling engine)</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-image">
+                  <img src="https://static.wixstatic.com/media/cce81a_df64638e9e0644acb6267e7377f7f69f~mv2.jpg/v1/fill/w_460,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5D-BIM-and-automatic-bill-of-quantity_edited.jpg" 
+                  class="img-fluid" 
+                  style="width: 700px; height: 400px; object-fit: cover;"
+                  alt="AI-Driven BIM Modeling">
+                
+                  </div>
+            </div>
         </div>
-        <div
-          class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp"
-          data-wow-delay="0.1s"
-        >
-          <!-- Testimonial 1 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
+
+
+  
+          <!-- AI-Integrated Management -->
+          <div class="row align-items-center mb-5 animate-on-scroll">
+              <div class="col-lg-6">
+                  <div class="service-card">
+                      <div class="service-icon">
+                          <i class="fas fa-cogs"></i>
+                      </div>
+                      <h3 class="h4 mb-4">AI-Integrated BIM Management & BEP Development</h3>
+                      <ul class="feature-list">
+                          <li class="feature-item">AI-powered BIM Execution Plan (BEP) development, ensuring streamlined workflows</li>
+                          <li class="feature-item">Automated compliance checks to align with US & Middle East regulations</li>
+                          <li class="feature-item">AI-driven project monitoring and reporting for real-time decision-making</li>
+                          <li class="feature-item">Generative design tools to optimize layouts and structural efficiency</li>
+                      </ul>
+                  </div>
               </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Rahul Verma</h4>
-                <p class="m-0 text-dark">Software Engineer</p>
+              <div class="col-lg-6">
+                  <div class="service-image">
+                      <img src="https://cdn.prod.website-files.com/654a1d7580dfa9c70ea7e51b/66959e35adf5e3b218ba1376_bim_facility.webp" alt="BIM Management">
+                  </div>
               </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "The catering service exceeded our expectations. The food was
-                delicious, and the staff were incredibly professional. I highly
-                recommend them for any event in Bokaro!"
-              </p>
-            </div>
           </div>
-          <!-- Testimonial 2 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Sneha Sharma</h4>
-                <p class="m-0 text-dark">Event Planner</p>
-              </div>
+
+          <div class="row align-items-center mb-5 animate-on-scroll">
+            <div class="col-lg-6 order-lg-2">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="h4 mb-4">
+                      DESIGN REVIEW ANALYSIS AND TECHNICAL DESIGN CONTROL</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">Design review based on check lists and procedures (design quality, compliance with codes and regulations and compliance with Terms of reference)</li>
+                        <li class="feature-item">Identifying all relevant design deficiencies and inconsistencies that need to be resolved.</li>
+                        <li class="feature-item">Evaluation of overall design quality</li>
+                     
+                    </ul>
+                </div>
             </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "We hired their catering for a wedding in Bokaro, and it was
-                phenomenal! The variety of dishes and the taste were just
-                fantastic. All our guests were praising the food!"
-              </p>
+            <div class="col-lg-6">
+                <div class="service-image">
+                    <img src="https://static.wixstatic.com/media/cce81a_caa2620a166142b28d88c09f7f0b075a~mv2.jpg/v1/fill/w_460,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4-essential-elements-of-site-analysis_4.jpg"
+                    
+                    class="img-fluid" 
+                    style="width: 700px; height: 400px; object-fit: cover;"
+                    alt="AI-Driven BIM Modeling">alt="BIM Management">
+                
+                
+                  </div>
             </div>
-          </div>
-          <!-- Testimonial 3 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Amit Bhardwaj</h4>
-                <p class="m-0 text-dark">Business Owner</p>
-              </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "The team made sure our corporate event was flawless. The food
-                was hot, fresh, and beautifully presented. Bokaro is lucky to
-                have such a top-notch catering service!"
-              </p>
-            </div>
-          </div>
-          <!-- Testimonial 4 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Priya Nair</h4>
-                <p class="m-0 text-dark">Doctor</p>
-              </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "I was impressed with the level of care they took with dietary
-                restrictions. Everything was handled so smoothly, and the food
-                was delicious. They made my event in Bokaro a memorable one."
-              </p>
-            </div>
-          </div>
-          <!-- Testimonial 5 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Karan Mehta</h4>
-                <p class="m-0 text-dark">Teacher</p>
-              </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "The attention to detail in the presentation of the food was
-                amazing. The service was punctual, and the food quality was
-                simply exceptional. Will definitely hire them again for any
-                event in Bokaro!"
-              </p>
-            </div>
-          </div>
-          <!-- Testimonial 6 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Radhika Gupta</h4>
-                <p class="m-0 text-dark">Interior Designer</p>
-              </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "The team delivered an unforgettable catering experience for my
-                housewarming party in Bokaro. The food was authentic, flavorful,
-                and beautifully prepared. Highly recommended!"
-              </p>
-            </div>
-          </div>
-          <!-- Testimonial 7 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Anil Kapoor</h4>
-                <p class="m-0 text-dark">Entrepreneur</p>
-              </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "Absolutely thrilled with the catering service provided. From
-                the initial consultation to the event day, everything was
-                handled with utmost professionalism. The food was exquisite, and
-                the feedback from guests was overwhelmingly positive!"
-              </p>
-            </div>
-          </div>
-          <!-- Testimonial 8 -->
-          <div class="testimonial-item rounded bg-light">
-            <div class="d-flex mb-3">
-              <div class="position-absolute" style="top: 15px; right: 20px">
-                <i class="fa fa-quote-right fa-2x text-dark"></i>
-              </div>
-              <div class="ps-3 my-auto">
-                <h4 class="mb-0 text-dark">Meera Patel</h4>
-                <p class="m-0 text-dark">Fashion Designer</p>
-              </div>
-            </div>
-            <div class="testimonial-content text-dark">
-              <div class="d-flex">
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i
-                ><i class="fas fa-star text-primary"></i>
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <p class="fs-5 m-0 pt-3">
-                "The catering service was a huge hit at my recent event. The
-                team was attentive and the food was delicious. Every detail was
-                taken care of, making it a stress-free experience. Highly
-                recommend them for events in Bokaro!"
-              </p>
-            </div>
-          </div>
         </div>
+  
+          <!-- AI-Enhanced Digital Twin -->
+          <div class="row align-items-center animate-on-scroll">
+              <div class="col-lg-6 order-lg-2">
+                  <div class="service-card">
+                      <div class="service-icon">
+                          <i class="fas fa-building"></i>
+                      </div>
+                      <h3 class="h4 mb-4">AI-Enhanced Digital Twin & Facility Management</h3>
+                      <ul class="feature-list">
+                          <li class="feature-item">AI-based real-time monitoring and predictive maintenance solutions</li>
+                          <li class="feature-item">Digital twin creation for smart buildings and infrastructure</li>
+                          <li class="feature-item">IoT-integrated AI analysis for energy efficiency and sustainability</li>
+                          <li class="feature-item">Comprehensive facility lifecycle management and optimization</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                  <div class="service-image">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywQ0LEjffSV8v7DtAAsnSgeyH-JAjPzrdaYpdD76uO-SsxtgE2r1dWwYDpyo8mgPmns&usqp=CAU" alt="Digital Twin">
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+  </section>
+    <!-- Service End -->
+<style>
+
+
+</style>
+ 
+    <!-- Testimonial Start -->
+    
 
     <!-- Testimonial End -->
 
     <!-- Footer Start -->
     <div
-      class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h1 class="text-primary">
-                Sanjay<span class="text-dark">Catering</span>
-              </h1>
-              <p class="lh-lg mb-4 text-dark">
-                A Complete Catering Solution for your all kinds of
-                Family,Corporate and Social Event to make them simple best
-              </p>
-              <div class="footer-icon d-flex">
-                <a
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  href="#"
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Special Facilities</h4>
-              <div class="d-flex flex-column align-items-start">
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a
-                >
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Sandwich</a
-                >
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Panner Burger</a
-                >
-                <a class="text-dark mb-3" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Special
-                  Sweets</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Contact Us</h4>
-              <div class="d-flex flex-column align-items-start">
-                <p class="text-dark">
-                  <i class="fa fa-map-marker-alt me-2"></i>
-                  C/F Harshvardhan Plaza City Centre, Sector 4, Bokaro Steel
-                  City Jharkhand
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-phone-alt text-primary me-2"></i> +91
-                  9065683771
-                </p>
-                <p class="text-dark">
-                  <i class="fas fa-envelope text-primary me-2"></i>
-                  SanjayCatering@gmail.com
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
-                  Service
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Social Gallery</h4>
-              <div class="row g-2">
-                <div class="col-4">
-                  <img
-                    src="img/menu-01.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-02.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-03.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-04.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-05.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-06.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+    class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
+    data-wow-delay="0.1s"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h1 class="text-primary">
+              OSA BIM<span class="text-dark"> and Design Consultants</span>
+           
+            </h1>
+            <p class="lh-lg mb-4 text-dark">
+              At OSA BIM and Design Consultants, we are redefining Building Information Modeling (BIM) through the power of Artificial Intelligence (AI). 
+            </p>
+            
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span class="text-light"
-              ><a href="#"
-                ><i class="fas fa-copyright text-light me-2"></i>Sanjay
-                Catering</a
-              >, All right reserved.</span
-            >
-          </div>
-          <div class="col-md-6 my-auto text-center text-md-end text-white">
-            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-            Designed By
-            <a
-              class="border-bottom"
-              href="https://sinu-new-portfolio.vercel.app/"
-              >Coding Ditto</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Copyright End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
-</html>
- <div
-      class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h1 class="text-primary">
-                Sanjay<span class="text-dark">Catering & Event Planners</span>
-                BY  <span class="text-dark">Asvind Kumar</span>
-              </h1>
-              <p class="lh-lg mb-4 text-dark">
-                A Complete Catering Solution for your all kinds of
-                Family,Corporate and Social Event to make them simple best
-              </p>
-              <div class="footer-icon d-flex">
-                <a
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  href="https://x.com/sanjaycaterers1?t=V9NbAWN-5garUXHjhUhF0A&s=09"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/sanjay_caterer_foodking?utm_source=qr&igsh=anlyaXA4djVzc24y"
-                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">EVENT PLANNER</h4>
-              <div class="d-flex flex-column align-items-start">
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Amenities
-                  </a
-                >
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Seating Arrangements
-                  </a
-                >
-                <a class="text-dark mb-3 text-dark" href=""
-                  ><i class="fa fa-check text-primary me-2"></i>Catering and Food Services
-                  </a
-                >
-                <a class="text-dark mb-3" href=""
-                  ><i class="fa fa-check text-primary me-2"></i> Lighting
-
-                 </a
-                >
-                <a class="text-dark mb-3" href=""
-                  ><i class="fa fa-check text-primary me-2"></i> Sound Systems
-
-
-                  </a
-                >
-                <a class="text-dark mb-3" href=""
-                ><i class="fa fa-check text-primary me-2"></i> Health and Safety
-
-
-
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">SERVICES</h4>
+            <div class="d-flex flex-column align-items-start">
+              <a class="text-dark mb-3 text-dark" href=""
+                ></i>AI-Driven BIM Modeling & Documentation
                 </a
               >
-              </div>
+              <a class="text-dark mb-3 text-dark" href=""
+                ></i>AI-Powered BIM Coordination & Clash Detection
+                </a
+              >
+              <a class="text-dark mb-3 text-dark" href=""
+                >AI-Integrated BIM Management & BEP Development
+                </a
+              >
+              <a class="text-dark mb-3" href=""
+                ></i> AI-Enhanced Digital Twin & Facility Management
+
+
+               </a
+              >
+              
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Contact Us</h4>
-              <div class="d-flex flex-column align-items-start">
-                <p class="text-dark">
-                  <i class="fa fa-map-marker-alt me-2"></i>
-                  C/F Harshvardhan Plaza City Centre, Sector 4, Bokaro Steel
-                  City Jharkhand
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-phone-alt text-primary me-2"></i> Primary : +91
-                   8863804782,9939341022
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-whatsapp text-primary me-2" ></i> WhatsApp: +91 9065683771
-                </p>
-                <p class="text-dark">
-                  <i class="fas fa-envelope text-primary me-2"></i>
-                  SanjayCatering@gmail.com
-                </p>
-                <p class="text-dark">
-                  <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
-                  Service
-                </p>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Contact Us</h4>
+            <div class="d-flex flex-column align-items-start">
+              <p class="text-dark">
+                <i class="fa fa-map-marker-alt me-2"></i>
+                Pentagon, Magarpatta City, Pune, India
+
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-phone-alt text-primary me-2"></i> Primary : +91
+                  +91 8624053270 
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-whatsapp text-primary me-2" ></i> WhatsApp: +91 8624053270 
+              </p>
+              <p class="text-dark">
+                <i class="fas fa-envelope text-primary me-2"></i>
+                aadarshghorpade3@gmail.com
+              </p>
+              <p class="text-dark">
+                <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
+                Service
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="mb-4">Social Gallery</h4>
-              <div class="row g-2">
-                <div class="col-4">
-                  <a href="https://www.instagram.com/sanjay_caterer_foodking?utm_source=qr&igsh=anlyaXA4djVzc24y">
-                    <img
-                      src="img/menu-01.jpg"
-                      class="img-fluid rounded-circle border border-primary p-2"
-                      alt=""
-                    />
-                  </a>
-                  
-                </div>
-                <div class="col-4">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Social Gallery</h4>
+            <div class="row g-2">
+              <div class="col-4">
+                <a href="#">
                   <img
-                    src="img/menu-02.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLawAc0zpnrBPmnbnbaiIX2FtQ6d_nk8cvg&s"
                     class="img-fluid rounded-circle border border-primary p-2"
                     alt=""
                   />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-03.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-04.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-05.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    src="img/menu-06.jpg"
-                    class="img-fluid rounded-circle border border-primary p-2"
-                    alt=""
-                  />
-                </div>
+                </a>
+                
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://steelaris.com/wp-content/uploads/2024/09/Depositphotos_474569128_L.jpg"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://engisoftengineering.com/wp-content/uploads/2023/12/Why-Partner-With-Us.webp"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe0XZSKas6ikMxrvBN_nvSS9Vh7uj_v9nnMg&s"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://bimassociates.com/wp-content/uploads/2024/10/home-page-c.jpg"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8KqgUqmuipt0phfe_zl_TkPOaKyIFw9ay5w&s"
+                  class="img-fluid rounded-circle border border-primary p-2"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span class="text-light"
-              ><a href="#"
-                ><i class="fas fa-copyright text-light me-2"></i>Sanjay
-                Catering</a
-              >, All right reserved.</span
-            >
-          </div>
-          <div class="col-md-6 my-auto text-center text-md-end text-white">
-            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-            Designed By
-            <a
-              class="border-bottom"
-              href="https://sinu-new-portfolio.vercel.app/"
-              >Coding Ditto</a
-            >
-          </div>
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="text-light"
+            ><a href="#"
+              ><i class="fas fa-copyright text-light me-2"></i>OSA BIM and Design Consultants 
+              </a
+            >, All right reserved.</span
+          >
+        </div>
+        <div class="col-md-6 my-auto text-center text-md-end text-white">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Developed By
+          <a
+            class="border-bottom"
+            href="https://sinu-new-portfolio.vercel.app/"
+            >Coding Ditto</a
+          >
         </div>
       </div>
     </div>
-    <!-- Copyright End -->
+  </div>
+  <!-- Copyright End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
+    ><i class="fa fa-arrow-up"></i
+  ></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+      const observerOptions = {
+          threshold: 0.2
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('animate-active');
+              }
+          });
+      }, observerOptions);
+  
+      document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+          observer.observe(element);
+      });
+  </script>
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
 </html>
